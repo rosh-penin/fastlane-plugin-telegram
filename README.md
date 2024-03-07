@@ -2,6 +2,22 @@
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-telegram)
 
+## New in this fork
+
+New optional parameter **api_url** that will allow alternative api usage.
+Https only scheme.
+
+```ruby
+telegram(
+  token: "...",
+  chat_id: "...",
+  text: "...",
+  file: "...",
+  mime_type: "...",
+  api_url: "api.telegram.org"
+)
+```
+
 ## Getting Started
 
 This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-telegram`, add it to your project by running:
